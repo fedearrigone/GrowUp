@@ -29,11 +29,14 @@ Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, por favor s
 
 ## Contribuciones
 
-Las contribuciones son bienvenidas. Por favor, sigue estos pasos:
+## Contribuciones
+Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, por favor sigue estos pasos:
+
 
 - Haz un fork del repositorio.
-- Crea una rama para tu feature (git checkout -b feature/nueva-feature).
-- Realiza tus cambios y haz commit (git commit -m 'Añadir nueva feature').
-- Empuja tu rama (git push origin feature/nueva-feature).
+- Crea una nueva rama (git checkout -b mejora/nueva-caracteristica).
+- Realiza los cambios y haz commit (git commit -m 'Descripción de los cambios').
+- Envía tus cambios (git push origin mejora/nueva-caracteristica).
 - Abre un Pull Request.
+
 
