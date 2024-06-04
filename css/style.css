@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Reddit Mono", monospace;
+    margin: 0;
+}
+
+/**HEADER**/
+
+.navbar{
+    width: 100%;
+    padding: 0px;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    top: 0;
+    width: 100%;
+}
+.navbar li{
+    float: left;
+}
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar li:last-of-type{
+    float: right;
+}
+.navbar li a:hover {
+    background-color: #111;
+}
+
+/**SECTION1 HERO**/
+
+.hero-image{
+    background-image: url(../img/hero.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hero-text {
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+
+    & h1{
+        font-size: 80px;
+    }
+    & p{
+        font-size: 35px;
+    }
+    & button{
+        border-radius: 15px;
+        padding: 7px;
+        margin: 20px;
+        transition: transform .5s;
+    }
+    & button:hover{
+        transform: scale(1.1);
+    }
+}
+
+/**SECTION 2**/
+
+.section2{
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;    
+}
+
+.products{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px auto;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 15px;
+    /**TRANSFORM ANIMACION**/
+    transition: transform .4s; 
+}
+.card:hover{
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.price {
+    color: grey;
+    font-size: 22px;
+}
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.card button:hover {
+    opacity: 0.7;
+}
+
+/**FOOTER**/
+
+footer{
+    position: relative;
+    width: 100%;
+    background: rgb(41, 41, 41);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .social-icons, footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  10px 0;
+    flex-wrap: wrap;
+    color: white;
+    padding: 0px;
+}
+footer .social-icons li, footer .menu li{
+    list-style: none;
+}
+footer .social-icons li a{
+    font-size: 2em;
+    color: azure;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.2s;
+}
+footer .social-icons li a:hover{
+   transform: translateY(-10px);
+}
+footer .menu li a{
+    font-size: 1.2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+footer .menu li a:hover{
+    opacity: 1;
+}
+footer p{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    padding-left: 20px;
+}
